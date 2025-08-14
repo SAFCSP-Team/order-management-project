@@ -8,7 +8,10 @@ Use fundamental data structures and algorithms to solve real-world problems with
 An e-commerce company needs a system to manage online orders during the shipping process. The system should be able to add new orders to a waiting queue and process them in the order they are received.
 
 ### Implementation
-- Create a class called `Order` that holds the details of an order, such as `orderType`, `customerName`, and `orderNumber`.
+- Create a class called `Order` that holds the details of an order, such as:
+  - `products`: an array of ordered product names
+  - `customer`: the customer name
+  - `id`: the order ID
 - Create an `OrderQueue` class to manage the queue of orders, supporting these operations:
   - Add a new order to the queue.
   - Process (ship) the first order in the queue and remove it from the queue.
@@ -19,9 +22,9 @@ An e-commerce company needs a system to manage online orders during the shipping
 ```java
 public static void main(String[] args) {
     OrderQueue tracker = new OrderQueue();
-    tracker.addOrder(new Order("Electronics", "Fahad", "A001"));
-    tracker.addOrder(new Order("Clothing", "Noura", "A002"));
-    tracker.addOrder(new Order("Books", "Sara", "A003"));
+    tracker.addOrder(new Order(new String[]{"Laptop", "Monitor"}, "Fahad", "A001"));
+    tracker.addOrder(new Order(new String[]{"Earrings", "Bracelets", "Necklaces"}, "Noura", "A002"));
+    tracker.addOrder(new Order(new String[]{"UNO", "Monopoly"}, "Sara", "A003"));
 
     tracker.printFirstOrder();
     tracker.printTotalOrders();
@@ -33,20 +36,20 @@ public static void main(String[] args) {
 }
 ```
 ```
-Order Type: Electronics
+Order Products: Laptop, Monitor
 Customer Name: Fahad
-Order Number: A001
+Order ID: A001
 
 Total Orders: 3
 
 Processing Order:
-Order Type: Electronics
+Order Products: Laptop, Monitor
 Customer Name: Fahad
-Order Number: A001
+Order ID: A001
 
-Order Type: Clothing
+Order Products: Earrings, Bracelets, Necklaces
 Customer Name: Noura
-Order Number: A002
+Order ID: A002
 
 Total Orders: 2
 ```
