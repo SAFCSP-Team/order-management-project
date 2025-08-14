@@ -13,6 +13,6 @@ public class OrderQueue {
         tracker.processOrder();
 
         tracker.firstOrder();
-       tracker.totalOrders();
+        tracker.totalOrders();
     }
 }
