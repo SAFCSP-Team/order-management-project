@@ -8,12 +8,12 @@ public class OrderQueue {
         tracker.addOrder(new Order(new String[]{"Earrings", "Bracelets", "Necklaces"}, "Noura", "A002"));
         tracker.addOrder(new Order(new String[]{"UNO", "Monopoly"}, "Sara", "A003"));
 
-        tracker.printFirstOrder();
-        tracker.printTotalOrders();
+        tracker.firstOrder();
+        tracker.totalOrders();
 
         tracker.processOrder();
 
-        tracker.printFirstOrder();
-        tracker.printTotalOrders();
+        tracker.firstOrder();
+        tracker.totalOrders();
     }
 }
