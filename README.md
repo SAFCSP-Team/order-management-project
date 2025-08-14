@@ -9,9 +9,9 @@ An e-commerce company needs a system to manage online orders during the shipping
 
 ### Implementation
 - Create a class called `Order` that holds the details of an order, such as:
-  - `products`: an array of ordered product names
-  - `customer`: the customer name
-  - `id`: the order ID
+  - `products`: an array of ordered product names.
+  - `customer`: the customer name.
+  - `id`: the order ID.
 - Create an `OrderQueue` class to manage the queue of orders, supporting these operations:
   - Add a new order to the queue.
   - Process (ship) the first order in the queue and remove it from the queue.
