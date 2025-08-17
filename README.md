@@ -1,13 +1,13 @@
 # Order Management Project
 
-### Objective
+## Objective
 Use fundamental data structures and algorithms to solve real-world problems with a queue data structure.
 
 
-### Problem
+## Problem
 An e-commerce company needs a system to manage online orders during the shipping process. The system should be able to add new orders to a waiting queue and process them in the order they are received.
 
-### Implementation
+## Implementation
 - Create a class called `Order` that holds the details of an order, such as:
   - `products`: an array of ordered product names.
   - `customer`: the customer name.
@@ -18,7 +18,7 @@ An e-commerce company needs a system to manage online orders during the shipping
   - Print the total number of orders currently in the queue.
   - Print the details of the first order in the queue.
  
-### Test Case
+## Test Case
 ```java
 public static void main(String[] args) {
     OrderQueue tracker = new OrderQueue();
